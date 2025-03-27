@@ -16,3 +16,8 @@ For configuration use the add-on configuration UI of Home Assistant.
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+
+Ports needed:
+
+25565 – Java Edition
+19132-19133 – TCP and UDP ports for Bedrock Edition
