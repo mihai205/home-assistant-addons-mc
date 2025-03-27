@@ -71,15 +71,6 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4.2.2
 
-      - name: Update apt package list
-        run: sudo apt-get update
-  
-      - name: Install OpenJDK 21 headless
-        run: sudo apt-get install -y openjdk-21-jdk-headless
-  
-      - name: Verify Java installation
-        run: java -version
-
       - name: Get information
         id: info
         uses: home-assistant/actions/helpers/info@master
