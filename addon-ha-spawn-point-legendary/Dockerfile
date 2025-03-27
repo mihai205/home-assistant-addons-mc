@@ -5,6 +5,8 @@ ARG PAPERMC_VERSION="1.21.3"
 ARG PAPERMC_BUILD="26"
 ARG JAVA_VERSION="zulu21-jre-headless"
 ARG JAVA_VERSION_REPO="openjdk21"
+# Set non-interactive mode to avoid prompts
+ARG DEBIAN_FRONTEND=noninteractive
 
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
@@ -15,7 +17,7 @@ RUN \
     && apt-get -y install unzip \
     && apt-get -y install wget \
     && apt-get -y install software-properties-common \
-    && apt-get -y install ca-certificates \
+    && apt-get -y install apt-utils \
     && wget -qO- https://repos.azul.com/azul-repo.gpg | tee /etc/apt/trusted.gpg.d/azul.asc \
     && echo "deb https://repos.azul.com/zulu/$JAVA_VERSION_REPO/deb stable main" | tee /etc/apt/sources.list.d/zulu.list \
     && apt-get update \
