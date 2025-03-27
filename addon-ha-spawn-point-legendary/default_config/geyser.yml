@@ -187,11 +187,11 @@ notify-on-new-bedrock-update: true
 # about Geyser, such as how many people are online, how many servers are using Geyser,
 # what OS is being used, etc. You can learn more about bStats here: https://bstats.org/.
 # https://bstats.org/plugin/server-implementation/GeyserMC
-metrics:
+#metrics:
   # If metrics should be enabled
-  enabled: true
+  #enabled: true
   # UUID of server, don't change!
-  uuid: 96e45ad9-512d-4907-8a92-1ec5ebed6d5f
+  #uuid: 96e45ad9-512d-4907-8a92-1ec5ebed6d5f
 
 # ADVANCED OPTIONS - DO NOT TOUCH UNLESS YOU KNOW WHAT YOU ARE DOING!
 
