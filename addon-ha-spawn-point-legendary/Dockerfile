@@ -3,7 +3,7 @@ FROM ${BUILD_FROM}
 
 ARG PAPERMC_VERSION="1.21.3"
 ARG PAPERMC_BUILD="26"
-ARG JAVA_VERSION="openjdk-21-jre-headless"
+ARG JAVA_VERSION="openjdk-17-jre-headless"
 
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
@@ -11,7 +11,8 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN \
     apt-get -y update -y \
     && apt-get -y install yq \
-    && apt-get -y install unzip
+    && apt-get -y install unzip \
+    && apt-get -y install $JAVA_VERSION
 
 # Copy root filesystem
 COPY rootfs /
