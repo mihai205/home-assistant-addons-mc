@@ -13,10 +13,9 @@ RUN \
     apt-get -y update -y \
     && apt-get -y install yq \
     && apt-get -y install unzip \
-    && apt-get -y install \
-    wget \
-    software-properties-common \
-    ca-certificates \
+    && apt-get -y install wget \
+    && apt-get -y install software-properties-common \
+    && apt-get -y install ca-certificates \
     && rm -rf /var/lib/apt/lists/*
     && wget -qO- https://repos.azul.com/azul-repo.gpg | tee /etc/apt/trusted.gpg.d/azul.asc \
     && echo "deb https://repos.azul.com/zulu/$JAVA_VERSION_REPO/deb stable main" | tee /etc/apt/sources.list.d/zulu.list \
