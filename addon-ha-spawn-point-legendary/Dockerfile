@@ -9,7 +9,7 @@ ARG JAVA_VERSION="openjdk-21-jre-headless"
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 RUN \
-    sudo apt update && \
+    apt update && \
     add-apt-repository ppa:openjdk-r/ppa && \
     apt-get update && \
     apt-get -y update -y \
