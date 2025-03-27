@@ -11,8 +11,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN \
     apt-get -y update -y \
     && apt-get -y install yq \
-    && apt-get -y install unzip \
-    && apt-get -y install $JAVA_VERSION
+    && apt-get -y install unzip
 
 # Copy root filesystem
 COPY rootfs /
