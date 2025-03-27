@@ -13,18 +13,11 @@ RUN \
     apt-get -y update -y \
     && apt-get -y install yq \
     && apt-get -y install unzip \
-
-RUN wget -qO- https://repos.azul.com/azul-repo.gpg | tee /etc/apt/trusted.gpg.d/azul.asc
-RUN echo "deb https://repos.azul.com/zulu/$JAVA_VERSION_REPO/deb stable main" | tee /etc/apt/sources.list.d/zulu.list
-
-# Update package list again after adding new repo
-RUN apt-get update
-
-# Install OpenJDK 21 (headless)
-RUN apt-get install -y $JAVA_VERSION
-
-# Verify the installation
-RUN java -version
+    && wget -qO- https://repos.azul.com/azul-repo.gpg | tee /etc/apt/trusted.gpg.d/azul.asc \
+    && echo "deb https://repos.azul.com/zulu/$JAVA_VERSION_REPO/deb stable main" | tee /etc/apt/sources.list.d/zulu.list \
+    && apt-get update \
+    && apt-get install -y $JAVA_VERSION \
+    && java -version
 
 # Copy root filesystem
 COPY rootfs /
