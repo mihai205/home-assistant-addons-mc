@@ -9,8 +9,9 @@ ARG JAVA_VERSION="openjdk-21-jre-headless"
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 RUN \
-    apt-get update && \
+    sudo apt update && \
     add-apt-repository ppa:openjdk-r/ppa && \
+    apt-get update && \
     apt-get -y update -y \
     && apt-get -y install yq \
     && apt-get -y install unzip \
