@@ -1,9 +1,9 @@
 ARG BUILD_FROM
 FROM ${BUILD_FROM}
 
-ARG PAPERMC_VERSION="1.20.4"
-ARG PAPERMC_BUILD="361"
-ARG JAVA_VERSION="openjdk-17-jre-headless"
+ARG PAPERMC_VERSION="1.21.3"
+ARG PAPERMC_BUILD="26"
+ARG JAVA_VERSION="openjdk-21-jre-headless"
 
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
