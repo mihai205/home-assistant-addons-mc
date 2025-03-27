@@ -1,4 +1,4 @@
-# Home Assistant Addons Repository - aph-le
+# Home Assistant Addons Repository - MM
 
 ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/aph-le/home-assistant-addons/main?style=plastic&logo=Github)
 ![GitHub repo size](https://img.shields.io/github/repo-size/aph-le/home-assistant-addons?style=plastic&logo=Github)
