@@ -64,7 +64,7 @@ RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language:
 # https://hangarcdn.papermc.io/plugins/other/DirectionHUD/versions/1.8.0.3%2B1.21.4/PAPER/directionhud-paper-1.8.0.3%2B1.21.4.jar
 RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o /minecraft/plugins/directionhud.jar "https://hangarcdn.papermc.io/plugins/other/DirectionHUD/versions/1.8.0.3%2B1.21.4/PAPER/directionhud-paper-1.8.0.3%2B1.21.4.jar"
 # voice chat
-67| RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o minecraft/plugins/voicechat-bukkit-2.5.28.jar https://cdn.modrinth.com/data/9eGKb6K1/versions/XW1tnlMM/voicechat-bukkit-2.5.28.jar
+RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o minecraft/plugins/voicechat-bukkit-2.5.28.jar https://cdn.modrinth.com/data/9eGKb6K1/versions/XW1tnlMM/voicechat-bukkit-2.5.28.jar
 
 ############
 # 5 Labels #
