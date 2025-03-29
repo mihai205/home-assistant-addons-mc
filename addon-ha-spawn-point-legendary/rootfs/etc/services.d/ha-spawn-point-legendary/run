@@ -66,10 +66,10 @@ bashio::log.yellow "Starting Minecraft Server"
 exec java -XX:+UnlockDiagnosticVMOptions -XX:-UseAESCTRIntrinsics -DPaper.IgnoreJavaVersion=true -Xms400M  -jar ./papermc.jar
 
 bashio::log.yellow "Starting Chunky"
-echo chunky shape circle
-echo chunky spawn
-echo chunky radius 1000
-echo chunky start
+chunky shape circle
+chunky spawn
+chunky radius 1000
+chunky start
 
 exit 1
 
