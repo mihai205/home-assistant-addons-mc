@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: HA Spawn Point Legendary
-version: "2024.03.30-4"
+version: "2024.03.30-5"
 slug: ha-spawn-point-legendary
 description: Minecraft Server Legendary Addon Java/Geyser/Floodgate Edition
 url: "https://github.com/mihai205/home-assistant-addons-mc/tree/main/addon-ha-spawn-point-legendary"
