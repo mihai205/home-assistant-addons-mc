@@ -66,18 +66,19 @@ RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language:
 RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o /minecraft/plugins/ViaVersion.jar "https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/5.3.0/PAPER/ViaVersion-5.3.0.jar"
 # ViaBackwards - https://hangarcdn.papermc.io/plugins/ViaVersion/ViaBackwards/versions/5.3.0/PAPER/ViaBackwards-5.3.0.jar
 RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o /minecraft/plugins/ViaBackwards.jar "https://hangarcdn.papermc.io/plugins/ViaVersion/ViaBackwards/versions/5.3.0/PAPER/ViaBackwards-5.3.0.jar"
-# Chunky - pregenerating chunks - https://hangarcdn.papermc.io/plugins/pop4959/Chunky/versions/1.4.28/PAPER/Chunky-Bukkit-1.4.28.jar
-# RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o /minecraft/plugins/Chunky.jar "https://hangarcdn.papermc.io/plugins/pop4959/Chunky/versions/1.4.28/PAPER/Chunky-Bukkit-1.4.28.jar"
 # https://hangarcdn.papermc.io/plugins/other/DirectionHUD/versions/1.8.0.3%2B1.21.4/PAPER/directionhud-paper-1.8.0.3%2B1.21.4.jar
 RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o /minecraft/plugins/directionhud.jar "https://hangarcdn.papermc.io/plugins/other/DirectionHUD/versions/1.8.0.3%2B1.21.4/PAPER/directionhud-paper-1.8.0.3%2B1.21.4.jar"
 # voice chat
 RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o minecraft/plugins/voicechat-bukkit.jar https://cdn.modrinth.com/data/9eGKb6K1/versions/XW1tnlMM/voicechat-bukkit-2.5.28.jar
 
 RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o minecraft/plugins/Sonar-Bukkit.jar https://github.com/jonesdevelopment/sonar/releases/download/2.1.27/Sonar-Bukkit.jar
-
-RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o minecraft/plugins/deadchest.jar https://dev.bukkit.org/projects/dead-chest/files/latest
+# death chest
+# RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o minecraft/plugins/deadchest.jar https://dev.bukkit.org/projects/dead-chest/files/latest
 # plan - https://github.com/plan-player-analytics/Plan/releases/download/5.6.2965/Plan-5.6-build-2965.jar
 RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o minecraft/plugins/plan.jar https://github.com/plan-player-analytics/Plan/releases/download/5.6.2965/Plan-5.6-build-2965.jar
+
+# https://hangarcdn.papermc.io/plugins/Artillex-Studios/AxGraves/versions/1.18.0/PAPER/AxGraves-1.18.0.jar
+RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o minecraft/plugins/AxGraves.jar https://hangarcdn.papermc.io/plugins/Artillex-Studios/AxGraves/versions/1.18.0/PAPER/AxGraves-1.18.0.jar
 
 # RUN mkdir -p /minecraft/plugins/plan
 # RUN 
