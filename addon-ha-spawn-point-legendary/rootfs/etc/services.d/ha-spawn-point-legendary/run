@@ -63,7 +63,7 @@ pwd
 ls -la
 
 bashio::log.yellow "Starting Minecraft Server"
-exec java -XX:+UnlockDiagnosticVMOptions -XX:-UseAESCTRIntrinsics -DPaper.IgnoreJavaVersion=true -Xms400M  -jar ./papermc.jar &
+exec java -XX:+UnlockDiagnosticVMOptions -XX:-UseAESCTRIntrinsics -DPaper.IgnoreJavaVersion=true -Xms400M  -jar ./papermc.jar
 
 # Wait for the Minecraft server to fully start
 # bashio::log.yellow "Waiting for Minecraft Server to start..."
