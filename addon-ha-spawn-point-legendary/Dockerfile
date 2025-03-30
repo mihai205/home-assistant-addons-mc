@@ -66,6 +66,8 @@ RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language:
 # voice chat
 RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o minecraft/plugins/voicechat-bukkit-2.5.28.jar https://cdn.modrinth.com/data/9eGKb6K1/versions/XW1tnlMM/voicechat-bukkit-2.5.28.jar
 
+RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o minecraft/plugins/Sonar-Bukkit.jar https://github.com/jonesdevelopment/sonar/releases/download/2.1.27/Sonar-Bukkit.jar
+
 ############
 # 5 Labels #
 ############
