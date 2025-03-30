@@ -19,5 +19,6 @@ For configuration use the add-on configuration UI of Home Assistant.
 
 Ports needed:
 
-25565 – Java Edition
-19132-19133 – TCP and UDP ports for Bedrock Edition
+- 25565 – Java Edition
+- 19132-19133 – TCP and UDP ports for Bedrock Edition
+- 8804 - plan
