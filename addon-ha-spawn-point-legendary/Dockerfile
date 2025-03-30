@@ -68,6 +68,8 @@ RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language:
 
 RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o minecraft/plugins/Sonar-Bukkit.jar https://github.com/jonesdevelopment/sonar/releases/download/2.1.27/Sonar-Bukkit.jar
 
+RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o minecraft/plugins/deathchest.jar https://hangarcdn.papermc.io/plugins/CyntrixAlgorithm/DeathChest/versions/2.2.7/PAPER/deathchest.jar
+
 ############
 # 5 Labels #
 ############
