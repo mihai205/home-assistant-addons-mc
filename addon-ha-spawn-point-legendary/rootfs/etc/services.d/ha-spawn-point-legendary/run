@@ -63,21 +63,21 @@ pwd
 ls -la
 
 bashio::log.yellow "Starting Minecraft Server"
-java -XX:+UnlockDiagnosticVMOptions -XX:-UseAESCTRIntrinsics -DPaper.IgnoreJavaVersion=true -Xms400M  -jar ./papermc.jar &
+exec java -XX:+UnlockDiagnosticVMOptions -XX:-UseAESCTRIntrinsics -DPaper.IgnoreJavaVersion=true -Xms400M  -jar ./papermc.jar &
 
 # Wait for the Minecraft server to fully start
-bashio::log.yellow "Waiting for Minecraft Server to start..."
-sleep 300
+# bashio::log.yellow "Waiting for Minecraft Server to start..."
+# sleep 300
 
-bashio::log.yellow "Starting Chunky"
-chunky shape circle
-chunky spawn
-chunky radius 1000
-chunky start
+# bashio::log.yellow "Starting Chunky"
+# chunky shape circle
+# chunky spawn
+# chunky radius 1000
+# chunky start
 
 # Keep the script running to prevent the container from exiting
-bashio::log.yellow "Service is running..."
-tail -f /dev/null
+# bashio::log.yellow "Service is running..."
+# tail -f /dev/null
 
 exit 1
 
