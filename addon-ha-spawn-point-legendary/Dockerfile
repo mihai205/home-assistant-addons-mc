@@ -51,6 +51,10 @@ RUN if [ -d /etc/services.d ]; then chmod -R 755 /etc/services.d; fi && \
 
 # Get needed binaries
 RUN mkdir -p minecraft/plugins
+
+# Clear the plugins folder
+RUN rm -rf /minecraft/plugins/*
+
 # PaperMC
 RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o /minecraft/papermc.jar "https://api.papermc.io/v2/projects/paper/versions/$PAPERMC_VERSION/builds/$PAPERMC_BUILD/downloads/paper-$PAPERMC_VERSION-$PAPERMC_BUILD.jar"
 # Floodgate
