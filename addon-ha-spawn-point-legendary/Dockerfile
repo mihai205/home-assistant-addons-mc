@@ -63,7 +63,7 @@ RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language:
 # Geyser
 RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o /minecraft/plugins/Geyser-Spigot.jar "https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot"
 # ViaVersion - newer versions can also join the server - https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/5.3.0/PAPER/ViaVersion-5.3.0.jar
-RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o /minecraft/plugins/ViaVersion.jar "https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/5.3.0/PAPER/ViaVersion-5.3.0.jar"
+RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o /minecraft/plugins/ViaVersion.jar "https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/5.3.1/PAPER/ViaVersion-5.3.1.jar"
 # ViaBackwards - https://hangarcdn.papermc.io/plugins/ViaVersion/ViaBackwards/versions/5.3.0/PAPER/ViaBackwards-5.3.0.jar
 RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o /minecraft/plugins/ViaBackwards.jar "https://hangarcdn.papermc.io/plugins/ViaVersion/ViaBackwards/versions/5.3.0/PAPER/ViaBackwards-5.3.0.jar"
 # https://hangarcdn.papermc.io/plugins/other/DirectionHUD/versions/1.8.0.3%2B1.21.4/PAPER/directionhud-paper-1.8.0.3%2B1.21.4.jar
@@ -79,6 +79,8 @@ RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language:
 
 # https://hangarcdn.papermc.io/plugins/Artillex-Studios/AxGraves/versions/1.18.0/PAPER/AxGraves-1.18.0.jar
 RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o minecraft/plugins/AxGraves.jar https://hangarcdn.papermc.io/plugins/Artillex-Studios/AxGraves/versions/1.18.0/PAPER/AxGraves-1.18.0.jar
+
+RUN curl --no-progress-meter -H "Accept-Encoding: identity" -H "Accept-Language: en" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4.212 Safari/537.36" -o minecraft/plugins/bluemap.jar https://hangarcdn.papermc.io/plugins/Blue/BlueMap/versions/5.7/PAPER/bluemap-5.7-paper.jar
 
 # RUN mkdir -p /minecraft/plugins/plan
 # RUN 
